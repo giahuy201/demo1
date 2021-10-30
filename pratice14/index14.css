@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #5ba4a4;
+    height: 20vh;
+    width: 100%;
+    position: relative;
+}
+
+.nav__bar{
+    position: absolute;
+    width: 80%;
+    height: 70px;
+    background-color: white;
+    left: 10%;
+    top: 70%;
+    border-radius: 16px;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.nav-iteam{
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-iteam__text{
+    font-weight: 600;
+    background-color: #effafa;
+    padding: 8px;
+    border-radius:  10px;
+    color: #5ba4a4;
+}
+
+.nav-iteam__icon{
+    padding: 6px;
+    border-radius: 0 5px 5px 0px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #5ba4a4;
+    transition: all 0.2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-iteam__icon:hover{
+    background-color: black;
+}
+
+.contain{
+    background-color: #effafa;
+   
+    padding-top: 40px;
+}
+
+.grid{
+    width: 100%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.card{
+    border-left: 2px solid steelblue;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 36px;
+}
+
+.card:nth-child(3n+1){
+    border-left: 3px solid rgb(197, 103, 197);
+}
+.card:nth-child(3n+2){
+    border-left: 3px solid rgb(89, 189, 59);
+}
+.card:nth-child(3n+3){
+    border-left: 3px solid rgb(48, 74, 146);
+}
+
+.card__left{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card__left img{
+    height: 100px;
+    margin-right: 20px;
+}
+
+.card__left .decrip{
+    display: flex;
+    flex-direction: column;
+}
+.card__left .decrip .decip__title{
+    display: flex;
+    align-items: center;
+}
+
+.card__left .decip__title .title__position{
+    color: #5ba4a4;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.card__left .decip__title .title__new{
+    font-size: 16px;
+    padding: 4px 6px;
+    color: white;
+    border-radius: 15px;
+    background-color: #5ba4a4;
+    margin-right: 10px;
+}
+
+.card__left .decip__title .title__featured{
+    padding: 4px 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #2c3a3a;
+    border-radius: 16px;
+}
+
+.card__left .decrip .name__job{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 12px 0;
+}
+
+.card__left .decrip .timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__left .timer p{
+    font-size: 18px;
+    color: #7b8e8e;
+}
+
+.card__left span{
+    margin: 0 20px;
+    
+}
+
+
+
+.card__right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__right .card__list{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.card__list .card__iteam{
+    list-style: none;
+    margin: 0 10px;
+    padding: 4px 6px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.card__list .card__iteam:hover{
+
+}
+
+.card__list .card__iteam:nth-child(even){
+    background-color: #e67e22;
+}
+
+.card__list .card__iteam:nth-child(odd){
+    background-color: #16a085;
+}
+
+@media (max-width : 739px) {
+
+    .grid{      
+        padding: 0 10px;
+        margin-top: 60px;
+    }
+    .card{
+        margin-bottom: 70px ;
+        flex-direction: column;
+        position: relative;
+    }
+    span{
+        margin: 0px 14px;
+    }
+    .card__left{
+        width: 100%;
+    }
+    .card__left img{
+        position: absolute;
+        top: -18%;
+        height: 86px;
+    }
+
+    .card__list .card__iteam{
+        margin-bottom: 10px;
+    }
+    
+    .card__left .decip__title .title__position,
+    .card__left .decip__title .title__new,
+    .card__left .decip__title .title__featured{
+        font-size: 20px;
+    }
+    
+    
+   .timer{
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+    }
+
+    .card__right{
+        width: 100%;
+        margin-top: 20px;
+    }
+}

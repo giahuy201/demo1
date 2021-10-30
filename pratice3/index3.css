@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    
+}
+    body{
+        background-color: #0d1323;  
+    }
+.app{
+    margin-top: 50px;
+    
+}
+.dash-board{    
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+    max-width: 100%;
+}
+
+.tracker{
+    background-color: hsl(246, 80%, 60%);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.tracker-img img{
+    height: 70px;
+    border: 3px solid white ;
+    border-radius: 50%;
+}
+
+.tracker-infor{
+
+}
+
+.track-infor__decr
+{
+    color: #8968e0;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 15px 0 0;
+}
+.track-infor__name
+{
+    color: #ccc4e2;
+    font-family: Rubik;
+    font-size: 26px;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+}
+.schedule{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 26px 0;
+}
+
+.schedule-tab{
+    cursor: pointer;
+    color: #465fc3;
+    margin: 16px 0 0 26px;
+    font-size: 22px;
+}   
+
+.schedule-tab.tab--active{
+    color: rgb(226, 211, 211);
+}
+
+
+
+
+.card.work{
+   border-radius: 15px;
+   overflow: hidden;
+   
+}
+
+.card__background{
+    background-color: #ff8c66;
+    
+    background-image: url("https://raw.githubusercontent.com/pratrock/time-tracker-js/b869f31e41f79c3e13d39b8819126bb714931a8e/images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: top -20px right 20px;
+    height: 50px;
+    
+}
+
+.card__tab{
+    border-radius: 15px;
+    height: 170px;
+    background-color: #1c1f4a;
+    position: relative;
+    padding:  20px 20px;
+    top: -20px;
+}
+
+.card__heading{
+    display: flex;
+    justify-content: space-between;
+}
+.card__heading{
+    
+}
+.heading__left{
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+}
+
+.heading__right img {
+    color: red;
+    height: 5px;
+    
+}
+
+.card__hour{
+    font-size:  40px;
+    margin: 0;
+    color: white;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+.card__para{
+    margin: 0;
+    color: hsl(236, 100%, 87%);
+    margin-top: 10px;
+    
+}

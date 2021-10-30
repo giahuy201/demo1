@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://github.com/HusamAjour/to-do/blob/main/images/bg-desktop-dark.jpg?raw=true');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 64vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 500px;
+}
+
+
+.contain-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contain-head h2{
+    color: white;
+    font-size: 40px;
+    background-color : unset;
+    letter-spacing: 8px;
+}
+
+.contain-head img{
+    width: 28px;
+    height: 28px;
+}
+
+.contain-input{
+    margin-top: 20px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px #c9b5b5;
+    position: relative;
+}
+
+
+
+.contain-input input{
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    border: 0;
+    outline: none;
+}
+
+
+.drow{
+    position: absolute;
+    width: 50%;
+   
+    background-color: white;
+    border-radius: 6px;
+    top: 124%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contain-input .drow.active{
+    display: flex;
+}
+
+.drow-iteam:hover{
+    border-radius: 6px;
+    background-color: rgb(209, 173, 209);
+}
+
+.drow-iteam{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0 10px 20px;
+    text-transform: capitalize;
+}
+
+.history{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #f1ecec;
+    border-radius: 8px;
+    padding: 0 ;
+}
+
+.history__list{
+   
+    border-bottom: 1px solid rgb(219, 200, 200);
+}
+
+.history__iteam{
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 14px 0 14px 20px;
+    display: flex;
+    align-items: center;    
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.history__iteam:hover{
+    background-color: rgb(224, 210, 224);
+}
+
+
+.icon__check{
+    width: 26px;
+    height: 26px;
+    border-radius: 30px;
+    border : 2px solid black;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.icon__check img{
+    display: none;
+}
+
+.icon__check.active img{
+    display: block;
+}
+.icon__check.active{
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)) padding-box, linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)) border-box;
+    border-color: transparent;
+}
+
+
+
+.history__footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.history__footer-iteam{
+    padding: 10px 12px;
+    font-size: 20px;
+    transition: background-color 0.3s linear;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.history__footer-iteam:hover{
+    color: white;
+    background-color: rgb(219, 204, 183);
+}
+
+.history__footer-iteam.active{
+    color: hsl(220, 98%, 61%);
+}
+

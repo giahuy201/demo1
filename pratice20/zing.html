@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>zing</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="zingCss.css">
+        
+        <link rel="stylesheet" href="/pratice_F8/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+        
+    </head>
+
+    <body>
+        
+        <div class="app">
+            <div class="dashboard">
+                <div class="header">
+                    <h4 class="header__title">Now playing</h4>
+                    <p class="header__para">June playlist !!! so deep</p>
+                </div>
+                <div class="main">
+                    <div class="main__disc">
+                        <img class="main__disc-img" style="background-image: url(https://image.winudf.com/v2/image/Y29tLmtsb3dvci5uZXltYXJwc2d3YWxscGFwZXJfc2NyZWVuXzBfd21zdmQ0cXg/screen-0.jpg?fakeurl=1&type=.jpg;)">
+                    </div>
+                </div>
+                <div class="btn_controller">
+                    
+                        <div class="btn btn__repeat ">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="btn btn_pre">
+                            <i class="fas fa-step-backward"></i>                     
+                        </div>
+                        <div class="btn btn_start">
+                            <i class="fas fa-pause icon-pause"></i>
+                            <i class="fas fa-play icon-play"></i>
+                        </div>
+                        
+                        <div class="btn btn_next">
+                            <i class="fas fa-step-forward"></i>
+                        </div>
+                        <div class="btn btn_random">
+                            <i class="fas fa-random"></i>
+                        </div>
+                    
+                </div>
+                <input class="progress" type="range"  value="0" step="1" min="0" max="100">
+                <audio  id="audio" src=""></audio>
+            </div>
+
+            <div class="playlist">
+               
+                
+            </div>
+        </div>
+
+
+
+        <script src="zingJs.js"></script>
+    </body>
+</html>

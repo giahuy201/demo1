@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+
+.header__left{
+    width: 55%;
+    background-image: url("https://github.com/kkzio/room-homepage-master/blob/master/images/desktop-image-hero-1.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header__list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 60px;
+}
+.header__iteam{
+    margin: 0 14px;
+    list-style: none;
+    text-align: center;
+}
+
+.header__iteam a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    min-width: 56px;
+    display: block;
+    
+}
+
+.header__iteam a::before{
+    content: "";
+    height: 3px;
+    width: 50%;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    transform: scale(0);
+    transition: transform 0.2s linear;
+
+}
+
+.header__iteam:hover a::before{
+    transform: scale(1);
+}
+
+
+.header__iteam.active a{
+    font-size: 26px;
+    color: white;
+    margin-right: 20px;
+    font-weight: 600;
+    transition: border-botton 1s ease;
+}
+
+
+
+.header__right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 50px;
+    margin: auto;
+}
+
+.header__head{
+    font-size: 36px;
+    margin-bottom: 30px;
+    line-height: 32px;
+}
+
+.header__para{
+    color: #a1a1a1;
+    letter-spacing: 1px;
+}
+
+.header__name-shop{
+    margin-top: 30px;
+    letter-spacing: 5px;
+    font-weight: 100;
+
+}
+
+.header__name-shop img{
+    margin-left: 20px;
+    transition: transform 0.5s ease;
+}
+
+.header__name-shop:hover img{
+    transform: translateX(26px);
+}
+
+.header__button{
+    margin: 30px 0 0 20px;
+    display: flex;
+}
+
+.button{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-right: 1px solid white;
+    background-position: center;
+    cursor: pointer;
+}
+
+.button:first-child{
+   
+    background-repeat: no-repeat;
+    background-image: url("https://raw.githubusercontent.com/kkzio/room-homepage-master/7553404f17a88c87b7a850dbd975abdd8dd5d704/images/icon-angle-left.svg");
+}
+
+.button:last-child{
+
+    background-repeat: no-repeat;
+    background-image: url("https://raw.githubusercontent.com/kkzio/room-homepage-master/7553404f17a88c87b7a850dbd975abdd8dd5d704/images/icon-angle-right.svg");
+}
+
+.button:hover{
+    opacity: 0.8;
+}
+.container{
+    display: flex;
+
+}
+
+.contain__left{
+
+    height: 190px;
+}
+
+.contain__right{
+    height: 190px;
+}
+
+.contain__center{
+    padding: 30px 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.container__heading{
+    font-size: 24px;
+   
+}
+
+.contain__para{
+    margin-top: 12px;
+    color: #a1a1a1;
+    letter-spacing: 1px;
+}
+
+
+

@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.app .card {
+  padding: 26px 32px 32px 32px;
+  border-radius: 15px;
+  max-height: 282px;
+  margin-top: 32px;
+  height: 100%;
+}
+.app .card .card_heading {
+  display: flex;
+  align-items: flex-start;
+}
+.app .card .card_heading .heading__icon {
+  display: flex;
+}
+.app .card .card_heading .heading__icon .heading__icon-img {
+  display: block;
+  border-radius: 50%;
+  width: 38px;
+}
+.app .card .card_heading .heading__infor {
+  margin-left: 20px;
+  line-height: 18px;
+}
+.app .card .card_heading .heading__infor .heading__name {
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+.app .card .card_heading .heading__infor .heading__add {
+  font-size: 14px;
+  color: white;
+  opacity: 0.6;
+}
+.app .card .card__decrip {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+.app .card .card__para {
+  color: white;
+  opacity: 0.8;
+  margin-top: 20px;
+  line-height: 16px;
+  font-size: 14px;
+}
+.app .card.Daniel {
+  background-color: #7541c8;
+  box-shadow: 0 20px 10px #e9eaed;
+  background-image: url("https://mrricram.github.io/testimonials-grid-section/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 100px;
+}
+.app .card.Jonathan {
+  box-shadow: 20px 15px 15px #e9eaed;
+  background-color: #48556a;
+}
+.app .card.jeanette {
+  box-shadow: 15px 15px 15px #e9eaed;
+  background-color: #fefefe;
+}
+.app .card.jeanette .card_heading .heading__name {
+  color: black;
+}
+.app .card.jeanette .card_heading .heading__add {
+  color: black;
+}
+.app .card.jeanette .card__decrip {
+  color: #48556a;
+}
+.app .card.jeanette .card__para {
+  color: #48556a;
+}
+.app .card.patrick {
+  box-shadow: 20px 15px 15px #e9eaed;
+  background-color: #19212e;
+}
+.app .card.kira {
+  max-height: 100%;
+  box-shadow: 15px 15px 15px #e9eaed;
+  background-color: #fefefe;
+}
+.app .card.kira .heading__infor .heading__name {
+  color: black;
+}
+.app .card.kira .heading__infor .heading__add {
+  color: black;
+}
+.app .card.kira .card__decrip {
+  color: #48556a;
+}
+.app .card.kira .card__para {
+  color: #48556a;
+}
+
+/*# sourceMappingURL=style.css.map */

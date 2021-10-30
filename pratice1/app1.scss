@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.app{
+
+    .card{
+        padding: 26px 32px 32px 32px;
+        border-radius: 15px;
+        max-height: 282px;
+        margin-top: 32px;
+        height: 100%;
+        .card_heading{
+            display: flex;
+            align-items: flex-start;
+            .heading__icon{
+                display: flex;
+                & .heading__icon-img{
+                    display: block;
+                    border-radius: 50%;
+                    width: 38px;
+                }
+            }
+            .heading__infor{
+                margin-left: 20px;
+                line-height: 18px;
+                & .heading__name{
+                    font-weight: bold;
+                    font-size: 14px;
+                    color: white;
+                }
+                & .heading__add{
+                    font-size: 14px;
+                    color: white;
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        .card__decrip{
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            margin-top: 20px;
+        }   
+
+        .card__para{
+            color: white;
+            opacity: 0.8;
+            margin-top: 20px;
+            line-height: 16px;
+            font-size: 14px;
+        }
+
+        &.Daniel{
+            background-color: #7541c8;
+            box-shadow: 0 20px 10px #e9eaed;
+            background-image: url("https://mrricram.github.io/testimonials-grid-section/images/bg-pattern-quotation.svg");
+            background-repeat: no-repeat;
+            background-position: top right 100px;
+        }
+        &.Jonathan{
+            box-shadow: 20px 15px 15px #e9eaed;
+            background-color: #48556a;
+        }
+        &.jeanette{
+            box-shadow: 15px 15px 15px #e9eaed;
+            background-color: #fefefe;
+
+            .card_heading{
+                .heading__name{
+                    color: black;
+                }
+                .heading__add{
+                    color: black;
+                }
+            }
+            .card__decrip{
+                color: #48556a;
+            }   
+            .card__para{
+                color: #48556a;
+            }   
+
+        }
+        &.patrick{
+            box-shadow: 20px 15px 15px #e9eaed;
+            background-color: #19212e;
+        }
+        &.kira{
+            max-height: 100%;
+            box-shadow: 15px 15px 15px #e9eaed;
+            background-color: #fefefe;
+            .heading__infor{
+                .heading__name{
+                    color: black;
+                }
+                .heading__add{
+                    color: black;
+                }
+            }
+            .card__decrip{
+                color: #48556a;
+            }  
+            .card__para{
+                color: #48556a;
+            }   
+        }
+
+    }
+   
+    
+
+  
+}

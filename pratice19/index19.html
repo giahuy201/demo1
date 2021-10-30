@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index19.css">
+</head>
+<body>  
+    <div class="app">
+        <span id="hour">00</span>
+        <span class="colon">:</span>
+        <span id="minute">00</span>
+        <span class="colon">:</span>
+        <span id="sec">00</span>
+        <span class="colon">:</span>
+        <span id="ms_sec">00</span>
+    </div>
+    <div class="button">
+        <div  onclick="start()" class="btn btn__start">start</div>
+        <div onclick="stop()" class="btn btn__stop">stop</div>
+        <div onclick="reset()" class="btn btn__reset">reset</div>
+    </div>
+</body>
+
+<script>
+    const hour = document.querySelector("#hour");
+    const minute = document.querySelector("#minute");
+    const sec = document.querySelector("#sec");
+    const ms_sec = document.querySelector("#ms_sec");
+    let btn_start ;
+    var h = 0, m = 0 , s =  0, ms = 0;
+    // document.querySelectorAll(".btn").forEach(element => {
+    //     element.onclick = function(){
+    //         if( document.querySelector(".btn.active")){
+    //             document.querySelector(".btn.active").classList.remove("active");
+    //         }
+    //         element.classList.toggle("active");
+    //         return;
+    //     }
+    // });
+   
+
+    
+
+    function start(){
+        
+        
+        btn_start = setInterval(() => {
+         ms +=2;
+        if(ms == 100){
+            s ++;
+            ms = 0;
+            s = s < 10 ? "0" + s : s;
+        }
+        if(s == 60){
+            m ++;
+            s = 0;
+            m = m < 10 ? "0" + m : m;
+        }
+        if(m == 60){
+            h ++;
+            m = 0;
+            h = h < 10 ? "0" + h : h;
+        }
+
+        put();
+    }, 5);
+    }
+    function put(){
+        ms_sec.innerText = ms;
+        sec.innerText = s;
+        minute.innerText = m;
+        hour.innerText = h;
+    }
+    function stop(){
+        clearInterval(btn_start);
+    }
+    function reset(){
+        clearInterval(btn_start);
+        s= 0;
+        ms = 0;
+        h =  0;
+        m =  0;
+        ms_sec.innerText = "0" + 0;
+        sec.innerText = "0" + 0;
+        minute.innerText = "0" + 0;
+        hour.innerText = "0" + 0;
+    }
+    
+   
+
+</script>
+</html>

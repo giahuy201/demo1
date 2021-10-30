@@ -1,0 +1,164 @@
+
+/* mobile */
+@media (max-width :739px) {
+    :root{
+        --header-height : 50px;
+
+    }
+    .grid.wide{
+        width: unset;
+    }
+    .hideonMobile{
+        display: none;
+    }
+    .header-nav-search{
+        align-items: center;
+        justify-content: space-around;
+    }
+    .header__search {
+        height: 400px;    
+    }
+    .header__logo-link{
+        display: block;
+    }
+    .header__cart {
+        width: 60px;
+    }
+    .header__logo{
+        width: auto;
+    }
+
+    .header__search-mobile{
+        display: block;
+    }
+    .check_search-mobile{
+        display: block;
+    }
+    .icon-search-mobi{
+        font-size: 26px;
+    }
+}
+/* mobile and tablet */
+@media (max-width :1023px) {
+ 
+    .header__navbar{
+        display: none;
+    }
+   .category{
+       display: none;
+   }
+   .grid.wide{
+    width: unset;
+}
+   .row{
+        margin-left: 0;
+        margin-right: 0;
+        
+   }
+   
+   
+
+}
+
+/* tablet */
+@media (min-width : 740px) and (max-width : 1023px) {
+    :root{
+        --header-height : 120px;
+        --header-height-navbar: 50px;
+    }
+    .grid.wide{
+        width: unset;
+    }
+    .header{
+        z-index: 99;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+   
+    .container{
+        margin-top: 10px;
+    }
+    .bar__controller-tablet{
+        display: block;
+    }
+    .header-nav-search{
+        
+    }
+
+
+   
+    .header__menu-tablet{
+        display: block;
+    }
+
+
+    .category__controll-tablet{
+        display: block;
+        top: calc(var(--header-height) + var(--height-bar-tablet));
+    }
+    
+    .bar__controller-tablet-list{
+      
+    }
+    .main-product .col{
+        margin-top: 16px;
+    }
+
+    .header-nav-search{
+        height: var(--header-height);
+    }
+    .header__search-history{
+        flex:1;
+    }
+    .header__search-input {
+        min-width: 400px;
+    }
+    .header__search-btn{
+        width: 80px;
+    }
+    .header__search-dash{
+        margin: 0 15px;
+    }
+
+    .header__logo-link{
+        display: block;
+
+    }
+
+    .header__logo{
+        width: 150px;
+        margin: 0 15px;
+    }
+    .header__cart{
+        width: 150px;
+    }
+    .header__cart-list{
+        height: 32vh;
+        width: 40vw;
+    }
+
+    .bar-controller-page{
+        display: none;
+    }
+    .main-product,
+    .main-product__heading,
+    .main-product__price,
+    .main-product__interact__icon{
+        font-size: 18px;
+    }
+    .main-product__label{
+        font-size: 20px;
+    }
+
+    .grid__column-5__heading{
+        font-size: 22px;
+    }
+    .grid__column-5__item{
+        font-size: 20px;
+    }
+
+
+    
+}
+

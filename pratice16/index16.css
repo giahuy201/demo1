@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.app{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:  30px 0;
+    border-bottom: 2px solid tan;
+}
+
+header .header__logo{
+    margin-right: 80px;
+}
+
+header .header__list{
+    display: flex;
+    flex: 1;
+}
+
+.header__iteam{
+    list-style: none;
+}
+
+.header__list .header__iteam a{
+    text-decoration: none;
+    color: rgba(105, 112, 125, 1);
+    margin: 0 16px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.header__list .header__iteam a:hover{
+    border-bottom: 4px solid #FF7E1B;
+}
+
+
+header .header__cart-avatar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+    position: relative;
+}
+
+header .header__cart-avatar .img__cart{
+    height: 30px;
+    cursor: pointer;
+    
+}
+
+.header__cart-avatar .cart__drow{
+    position: absolute;
+    top: 130%;
+    height: 30vh;
+    right: -22%;
+    width: 30vw;
+    box-shadow:  0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    display: none;
+}
+
+.cart__drow.active{
+    display: block;
+
+}
+
+.header__cart-avatar .cart__drow-empty{
+    display: none;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+
+.header__cart-avatar.active .cart__drow-empty{
+    display: flex;
+    
+}
+
+.cart__drow .cart__drow-heading{
+    font-size: 18px;
+    padding: 20px;
+    border-bottom: 1px solid tan;
+}
+
+.cart__drow .cart__drow-main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.cart__drow .cart__drow-main .drow-decrip__img{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cart__drow-main .drow-decrip__img .drow__img-bin{
+    cursor: pointer;
+}
+
+
+.cart__drow .cart__drow-main .drow-decrip__img .img_silumation{
+    height: 50px;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+.drow-decrip__price .drow-decrip__price-heading{
+    font-size: 18px;
+    
+}
+
+.drow-decrip__price-quantity{
+    margin-top: 6px;
+}
+
+.drow-decrip__price-quantity span{
+    font-weight: 600;
+}
+
+.drow-decrip__price-quantity .span-active{
+    color: #557e7e;
+    font-weight: 300;
+}
+
+.drow__button{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 6px;
+    height: 40px;
+    background-color: #FF7E1B;
+    line-height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.header__cart-avatar .sp_num{
+    content: "";
+    position: absolute;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: #FF7E1B;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    left: 20px;
+    display: none;
+}
+
+.header__cart-avatar .sp_num.active{
+    display: block;
+}
+
+
+header .header__cart-avatar .img__cart:hover{
+    color: black;
+    filter: brightness(50%);
+}
+
+.header__cart-avatar.active .cart__drow-main{
+    display: none;
+}
+
+header .header__cart-avatar .img__avatar{
+    height: 60px;
+    border-radius: 40px;
+    border: 2px solid transparent;
+}
+
+header .header__cart-avatar .img__avatar:hover{
+    border: 2px solid #FF7E1B;
+}
+
+
+.main{
+    display: flex;
+    margin : 30px 0;
+}
+
+.main .main__img{
+    width: 50%;
+   display: flex;
+   flex-direction: column;
+   padding: 0 5%;
+}
+.main .main__img .img_1{
+   border-radius: 20px;
+    object-fit: cover;
+    image-rendering: pixelated;
+ 
+}
+
+.selection{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selection img{
+    border-radius: 8px ;
+    height: 100px;
+    /* border : 2px solid rgba(255, 115, 27,1); */
+}
+
+.selection img.active{
+    border : 2px solid rgba(255, 115, 27,1);
+}
+
+.main__decrip{
+    width: 50%;
+    padding: 20px;
+}
+
+.main__decrip .main__decrip-trademark{
+    color: rgba(255, 115, 27,1);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.main__decrip .main__decrip-title{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    width: 70%;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.main__decrip .main__decrip__para{
+    margin-top: 20px;
+    color: rgba(105, 112, 125, 1);
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.main__price-percent{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.main__price{
+    
+}
+
+.price__new{
+    font-size: 30px;
+}
+
+.price__old{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: #5c7a7a;
+}
+
+.main__percent{
+    color:  rgba(255, 115, 27,1);
+    font-weight: 600;
+    background-color: rgba(255, 238, 226, 1);
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.main__controller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.controll__left{
+    width: 34%;
+    display: flex;
+    align-items: center;
+    background-color: wheat;
+    text-align: center;
+    height: 50px;
+    margin-right: 16px;
+    border-radius: 8px;
+}
+
+.button__left{
+    width: 35%;
+    color:  rgba(255, 115, 27,1);
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.controll__num{
+    flex: 1;
+    border-left: 1px solid rgba(255, 115, 27,1);
+    border-right: 1px solid rgba(255, 115, 27,1);
+    font-size: 18px;
+    font-weight: 600;
+}
+.button__right{
+    width: 35%;
+    color:  rgba(255, 115, 27,1);
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button__left:hover,
+.button__right:hover{
+    color: #836654;
+}
+.controll__right{
+    background-color: #ff7e1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.5 ease;
+}
+
+.controll__right:hover{
+    opacity: 0.8;
+}
+
+.controll__right img{
+    filter: brightness(6);
+}
+
+.controll__right p{
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 600;
+}

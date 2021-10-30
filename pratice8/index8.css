@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url("https://raw.githubusercontent.com/pqhung3007/sunny-landing-page/main/images/desktop/image-header.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  font-size: 3rem;
+}
+.header .header__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 36px;
+  align-items: center;
+}
+.header .header__nav .nav__icon {
+  height: 24px;
+}
+.header .header__nav .nav__controll {
+  display: flex;
+  align-items: center;
+}
+.header .header__nav .nav__controll .nav__iteam {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-left: 40px;
+  cursor: pointer;
+  padding: 5px;
+}
+.header .header__nav .nav__controll .nav__iteam:hover {
+  color: #0d6efd;
+}
+.header .header__nav .nav__controll .nav__iteam.nav__iteam--button {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+.header .header__nav .nav__controll .nav__iteam.nav__iteam--button:hover {
+  color: white;
+  background-color: #0d6efd;
+}
+.header .header__text {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 48px;
+  color: white;
+}
+
+.container-1 {
+  display: flex;
+  margin: 0 -10px;
+}
+.container-1 .container-1__left {
+  flex-basis: 50%;
+  display: flex;
+  padding: 0 10px;
+}
+.container-1 .container-1__left .container-1__text {
+  width: 50%;
+  margin: auto;
+}
+.container-1 .container-1__left .container-1__text .container-1__heading {
+  font-weight: 600;
+  font-size: 42px;
+}
+.container-1 .container-1__left .container-1__text .container-1__para {
+  margin-top: 30px;
+  color: #818498;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.container-1 .container-1__left .container-1__text .container-1__link {
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  padding-right: 16px;
+}
+.container-1 .container-1__left .container-1__text .container-1__link .container-1__dash {
+  position: absolute;
+  height: 8px;
+  background-color: #ffde0066;
+  width: 100%;
+  bottom: 0;
+  border-radius: 8px;
+}
+.container-1 .container-1__right {
+  width: 50%;
+  padding: 0 10px;
+}
+.container-2 {
+  display: flex;
+  margin: 0 -10px;
+}
+.container-2 .container-2__left {
+  width: 50%;
+  padding: 0 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.container-2 .container-2__left .container__img {
+  width: 100%;
+  height: 100%;
+}
+.container-2 .container-2__right {
+  flex-basis: 50%;
+  display: flex;
+  padding: 0 10px;
+}
+.container-2 .container-2__right .container-2__text {
+  width: 50%;
+  margin: auto;
+}
+.container-2 .container-2__right .container-2__text .container-2__heading {
+  font-weight: 600;
+  font-size: 42px;
+}
+.container-2 .container-2__right .container-2__text .container-2__para {
+  margin-top: 30px;
+  color: #818498;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.container-2 .container-2__right .container-2__text .container-2__link {
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  padding-right: 16px;
+}
+.container-2 .container-2__right .container-2__text .container-2__link .container-2__dash {
+  position: absolute;
+  height: 8px;
+  background-color: #ffde0066;
+  width: 100%;
+  bottom: 0;
+  border-radius: 8px;
+}
+
+.container-3 {
+  display: flex;
+}
+.container-3 .container-3__left {
+  width: 50%;
+}
+.container-3 .container-3__right {
+  flex-basis: 50%;
+}
+
+.container-4 {
+  font-family: "Barlow", sans-serif;
+  color: #5a636c;
+}
+.container-4 .container-4__heading {
+  margin-top: 30px;
+  text-align: center;
+}
+.container-4 .container-4__infor {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-4 .container-4__infor .container-4__iteam {
+  width: 25%;
+  text-align: center;
+}
+.container-4 .container-4__infor .container-4__iteam .container-4__icon {
+  border-radius: 50%;
+  height: 90px;
+}
+.container-4 .container-4__infor .container-4__iteam .container-4__decrip {
+  margin-top: 20px;
+  font-weight: 500;
+}
+.container-4 .container-4__infor .container-4__iteam .container-4__name {
+  margin-top: 20px;
+}
+.container-4 .container-4__infor .container-4__iteam .container-4__job {
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=index8.css.map */

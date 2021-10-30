@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index6.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="calc__heading">
+                <h3 class="calc__header">Calculadora</h3>
+                <div class="calc__selection">
+                    <h3 class="calc__selection-title">TEMAS</h3>
+                    <div class="cont-button__selection">
+                        <button class="btn__selection btn--active"></button>
+                        <button class="btn__selection"></button>
+                        <button class="btn__selection"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="screen">
+                <p class="calc__screen" > </p>
+            </div>
+            <div class="fott">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col">
+                            <input class="but" type="button" value="7">
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="8" >
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="9" >
+                        </div>
+                        <div class="col">
+                            <button class="button b-6" id="btn--delete" onclick="delete_button();">DEL</button>
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="4" >
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="5" >
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="6" >
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="+" >
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="1" >
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="2" >
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="3" >
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="-" >
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="." >
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="0" >
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="/" >
+                        </div>
+                        <div class="col">
+                            <input class="but" type="button" value="*" >
+                        </div>
+                        <div class="col l-6">
+                            <button class="button b-6" id="btn--reset" onclick="reset_button()">RESET</button>
+                        </div>
+                        <div class="col l-6">
+                            <button class="button b-6" id="btn--suilt" onclick="resuil_button()">=</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index6.js"></script>
+</body>
+</html>
